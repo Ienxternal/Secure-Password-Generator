@@ -26,10 +26,10 @@
         </div>
         <div class="card-footer">
           <button id="configure" class="btn">Generate Password</button>
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
+
+          <!-- The Modal -->
+<div id="myModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
@@ -40,33 +40,22 @@
       <div class="input-group">
         <label>Password length (8-128)</label>
         <input type="range" id="length" min='8' max='128' step="1" />
-        <span id="length-result">10</span>
-        
+        <span id="length-result">10</span>  
       </div>
-      	<div class="settings">
-          <span class="settings__title field-title">settings</span>
-          <div class="setting">
-            <input type="checkbox" id="uppercase" checked />
-            <label for="uppercase">Include Uppercase</label>
-          </div>
-          <div class="setting">
-            <input type="checkbox" id="lowercase" checked />
-            <label for="lowercase">Include Lowercase</label>
-          </div>
-          <div class="setting">
-            <input type="checkbox" id="numbers" checked />
-            <label for="number">Include Numbers</label>
-          </div>
-          <div class="setting">
-            <input type="checkbox" id="symbols" />
-            <label for="symbol">Include Symbols</label>
-          </div>
-        </div>
-      
-        <button class="btn generate" id="generate">Submit</button>
-
+<section class="settings">
+  <ul class="container">
+  <li><input type="checkbox" id="uppercase" checked />
+            <label for="uppercase">Include Uppercase</label></li>
+            <li><input type="checkbox" id="lowercase" checked />
+            <label for="lowercase">Include Lowercase</label></li>
+            <li><input type="checkbox" id="numbers" checked />
+            <label for="number">Include Numbers</label></li>
+            <li><input type="checkbox" id="symbols" />
+            <label for="symbol">Include Symbols</label></li>
+            <button class="btn generate" id="generate">Submit</button>
+  </ul> 
+      </section>
     </div>
-
   </div>
 </div>
 
