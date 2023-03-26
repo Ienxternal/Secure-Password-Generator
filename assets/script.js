@@ -33,11 +33,11 @@ window.onclick = function(event) {
 
 //Creating event listener for range selection
 document.addEventListener('DOMContentLoaded', () => {
-  passLength.value = 10  
+	passLength.value = 10  
   passLengthResult.innerText = 10
 })
 passLength.addEventListener('input', (event) => {
-  passLengthResult.innerText  = event.target.value                   
+passLengthResult.innerText  = event.target.value                   
 })
 
 //Function to declare letters, numbers and symbols on the ASCII table

@@ -144,7 +144,8 @@ button[disabled] {
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  text-align: center;
 }
 
 /* Adds Animation */
@@ -177,9 +178,9 @@ button[disabled] {
   color: white;
 }
 
-.modal-body {
+/* .modal-body {
   padding: 2px 16px;
-}
+} */
 
 .container{
   justify-content: center;
@@ -192,7 +193,7 @@ ul {
 
 .modal-footer {
   padding: 2px 16px;
-  background-color: hsl(360, 91%, 36%);
+  background-color: hwb(0 3% 31%);
   color: white;
 }
 /* End of Modal */
@@ -202,11 +203,6 @@ ul {
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-  .modal-content {
-    width: 80%;
-  }
-}
-
   #password {
     font-size: 1rem;
   }
@@ -215,5 +211,16 @@ ul {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .modal-content {
+    width: 60%;
   }
 }
