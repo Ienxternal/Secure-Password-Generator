@@ -7,62 +7,57 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
+<body>
+  <main class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <section class="card">
+      <header class="card-header">
+        <h2>Generate a Password</h2>
       </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="configure" class="btn">Generate Password</button>
-
-
-          <!-- The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>Password Configurator</h2>
-    </div>
-    <div class="modal-body">
-      
-      <div class="input-group">
-        <label>Password length (8-128)</label>
-        <input type="range" id="length" min='8' max='128' step="1" />
-        <span id="length-result">10</span>  
-      </div>
-<section class="settings">
-  <ul class="container">
-  <li><input type="checkbox" id="uppercase" checked />
-            <label for="uppercase">Include Uppercase</label></li>
-            <li><input type="checkbox" id="lowercase" checked />
-            <label for="lowercase">Include Lowercase</label></li>
-            <li><input type="checkbox" id="numbers" checked />
-            <label for="number">Include Numbers</label></li>
-            <li><input type="checkbox" id="symbols" />
-            <label for="symbol">Include Symbols</label></li>
-            <button class="btn generate" id="generate">Submit</button>
-  </ul> 
+      <section class="card-body">
+        <textarea
+          readonly
+          id="password"
+          placeholder="Your Secure Password"
+          aria-label="Generated Password"
+        ></textarea>
       </section>
-    </div>
-  </div>
-</div>
+      <section class="card-footer">
+        <button id="configure" class="btn">Generate Password</button>
+      </section>
+    </section>
 
-
-        </div>
-      </div>
-    </div>
-    <script src="assets/script.js"></script>
-  </body>
+            <!-- Modal for password configuration -->
+    <section id="myModal" class="modal">
+      <aside class="modal-content">
+        <header class="modal-header">
+          <span class="close">&times;</span>
+          <!-- Main modal header -->
+          <h2>Password Configurator</h2>
+        </header>
+          <label>Password length (8-128)</label>
+          <!-- Input range that states minumum password length and maximum password length -->
+          <input type="range" id="length" min='8' max='128' step="1" />
+          <!-- Default password length but changes with scale movement -->
+          <span id="length-result">10</span>   
+            <ul class="container">
+              <!-- Creates 4 checkbox inputs that configures password criteria -->
+              <li><input type="checkbox" id="uppercase" checked />
+                <label for="uppercase">Include Uppercase</label></li>
+              <li><input type="checkbox" id="lowercase" checked />
+                <label for="lowercase">Include Lowercase</label></li>
+              <li><input type="checkbox" id="numbers" checked />
+                <label for="number">Include Numbers</label></li>
+              <li><input type="checkbox" id="symbols" />
+                <label for="symbol">Include Symbols</label></li>
+                <!-- Submit button to complete the password configuration -->
+              <button class="btn generate" id="generate">Submit</button>
+            </ul> 
+        </aside>
+    </section>
+  </main>
+  <script src="assets/script.js"></script>
+</body>
 </html>
